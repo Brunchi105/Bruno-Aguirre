@@ -1,0 +1,141 @@
+/* General styles */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(95, 94, 94);
+}
+
+/* Start of header & nav bar style  */
+
+header {
+  padding: 20px;
+  background-color: rgb(95, 94, 94);
+  color: rgb(122, 29, 29);
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 48px;
+  text-align: center;
+}
+
+header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+header nav ul li a {
+  color: rgba(122, 29, 29, 0.925);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* End of header & nav bar style */
+
+/* Hero styles start */
+
+.hero {
+  height: 500px;
+  width: 100%;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  font-size: 16px;
+}
+
+.aboutme p {
+  line-height: 1.7;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.second-line {
+  background: rgb(148, 41, 41);
+  font-style: italic;
+}
+
+.pic {
+  height: 300px;
+  width: 400px;
+}
+
+/* .rotate-label {
+} */
+
+.workstuff {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  font-size: 16px;
+}
+
+.workstuff p {
+  line-height: 1.7;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contactme {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+font-size: 16px
+}
+
+.contact-info {
+  width: 100%;
+  text-align: right;
+  margin: 3.5%;
+  color: black;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.contactme p {
+  line-height: 1.7;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.contact-info address ul {
+  list-style-type: none;
+}
+
+.contact-info address ul li a {
+  color: rgb(148, 41, 41);
+}
+
+/* Media query for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+  header nav ul li a {
+    font-size: 20px;
+  }
+}
