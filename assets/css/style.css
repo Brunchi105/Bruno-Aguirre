@@ -75,7 +75,7 @@ header nav ul li a:hover {
   width: 100%;
 }
 
-/* Sections */
+/* Sections - About Me, Work, Contact Information */
 
 .main-sections {
   display: flex;
@@ -128,7 +128,13 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 
-/* Style all font awesome icons */
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -137,27 +143,14 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-/* Footer */
-
-footer {
-  display: flex;
-  justify-content: center;
-}
-
-.fa-instagram {
-  color: white;
-}
-
+.fa-linkedin,
+.fa-instagram,
 .fa-twitter {
   color: white;
 }
 
-.fa-linkedin {
-  color: white;
-}
-
 .fa:hover {
-  opacity: 0.7;
+  color: rgb(148, 41, 41);
 }
 
 /* Media queries for breakpoints */
