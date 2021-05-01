@@ -11,17 +11,30 @@ body {
   background-color: rgb(95, 94, 94);
 }
 
-/* Start of header & nav bar style  */
+p {
+  line-height: 1.7;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Header & Navigation */
 
 header {
-  padding: 20px;
   background-color: rgb(95, 94, 94);
   color: rgb(122, 29, 29);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 header h1 {
   display: inline-block;
-  font-size: 48px;
+  font-size: 28px;
   text-align: center;
 }
 
@@ -43,9 +56,10 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: rgba(122, 29, 29, 0.925);
-  font-size: 20px;
+  color: white;
+  font-size: 24px;
   text-decoration: none;
+  padding: 6px;
 }
 
 header nav ul li a:hover {
@@ -54,32 +68,25 @@ header nav ul li a:hover {
   border-radius: 15px;
 }
 
-/* End of header & nav bar style */
-
-/* Hero styles start */
+/* Hero */
 
 .hero {
   height: 500px;
   width: 100%;
 }
 
-.aboutme,
-.workstuff,
-.contactme {
+/* Sections */
+
+.main-sections {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
   font-size: 16px;
+  padding: 60px 0;
 }
 
-.aboutme p,
-.workstuff p, 
-.contactme p {
-  line-height: 1.7;
-  width: 100%;
-  margin: 0 auto;
-  font-size: 20px;
-  text-align: center;
+.main-sections-alt {
+  background-color: rgb(95, 12, 12);
 }
 
 .second-line {
@@ -87,13 +94,19 @@ header nav ul li a:hover {
   font-style: italic;
 }
 
+.second-line-work {
+  background-color: rgb(95, 94, 94);
+}
+
 .pic {
   height: 300px;
   width: 400px;
 }
 
-/* .rotate-label {
-} */
+.main-pic {
+  height: 100%;
+  width: 100%;
+}
 
 .about-me-info,
 .work-info,
@@ -101,7 +114,7 @@ header nav ul li a:hover {
   width: 100%;
   text-align: left;
   margin: 3.5%;
-  color: black;
+  color: white;
   font-size: 18px;
   line-height: 1.2;
 }
@@ -115,20 +128,79 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 
-/* Media query for mobile phones and smaller */
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Media queries for breakpoints */
 @media screen and (max-width: 575px) {
+  header h1 {
+    flex: 1 100%;
+  }
+  header nav {
+    flex: 1 100%;
+    text-align: center;
+  }
+
   header nav ul li a {
     font-size: 20px;
   }
+
+  .main-sections {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .about-me-info,
   .work-info,
   .contact-info {
-    font-size: 12px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: -40px;
+    width: 95%;
+  }
+
+  .imgcenter {
     text-align: center;
   }
   .pic {
-    height: 300px;
+    height: 400px;
     width: 400px;
+    margin-top: 30px;
+  }
+
+  .main-pic {
+    height: 500px;
+    width: 500px;
+    margin-top: 30px;
   }
 }
-
